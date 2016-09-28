@@ -4,6 +4,9 @@ const staticFolder = require('serve-static')
 const fs = require('fs')
 
 
+const rout = require('./router').router
+
+
 function run() {
     let server = express()
     server.use(bodyParser.json())
@@ -13,11 +16,12 @@ function run() {
     
 
     console.log('hh:',__dirname)
+    server.use(rout);
 
     server.use("/test1",function(req:any,res:any,next:any){
                     fs.createReadStream('./test_page/test1.html').pipe(res);
                 })
-    server.use("/index",function(req:any,res:any,next:any){
+    server.use(function(req:any,res:any,next:any){
                 fs.createReadStream('./test_page/index.html').pipe(res);
             })
 
