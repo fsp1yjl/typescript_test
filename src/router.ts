@@ -11,6 +11,8 @@ function router(req:any,res:any,next:()=>{}) {
         module(res);
     } catch(err) {
         console.log(err);
+
+        console.log('.........')
         next();
     }
 
