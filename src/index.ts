@@ -16,7 +16,7 @@ function run() {
     
 
     console.log('hh:',__dirname)
-    server.use(rout);
+    //server.use(rout);
 
     server.use("/test1",function(req:any,res:any,next:any){
                     fs.createReadStream(__dirname + '/test_page/test1.html').pipe(res);
