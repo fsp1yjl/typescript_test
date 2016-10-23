@@ -2,6 +2,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `
+  <div class="ui vertical inverted sidebar menu left overlay visible" > 
+	 <div class="header"> 图片 </div>
+	 <div class="menu">
+		<a class="item" href="www.baidu.com">泗泾</a>
+		<a class="item" href="www.baidu.com">泗泾</a>
+		<a class="item" href="www.baidu.com">泗泾</a>
+	  </div>
+  </div>
   <i class="add to calendar icon"></i>
   <div class="ui items">
   <div class="item">
