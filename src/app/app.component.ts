@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+/*
 @Component({
   selector: 'my-app',
   template: `
@@ -45,8 +46,14 @@ import { Component } from '@angular/core';
   </div>
             `
 })
+*/
+@Component({
+    selector: 'my-app',
+    templateUrl:'/build/serve/app/a.html'
+})
 export class AppComponent { 
   count:number = 3;
+  text:string = 'who am i ?';
 }
 
 

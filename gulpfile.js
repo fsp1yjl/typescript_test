@@ -14,8 +14,8 @@ gulp.task('compoler:ts',['clean'], function() {
 })
 
 gulp.task('build:html',function() {
-    return gulp.src("./src/test_page/**/*.html")
-        .pipe(gulp.dest('build/serve/test_page'))
+    return gulp.src("./src/**/*.html")
+        .pipe(gulp.dest('build/serve'))
 })
 
 gulp.task('clean',function(){
